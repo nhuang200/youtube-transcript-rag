@@ -102,13 +102,13 @@ def init_components():
     DB_NAME = "rag_db"
     COLLECTION_NAME = "video_embeddings"
     
-    THIRD_PARTY_API_KEY = "sk-aEZsRpQnHqrbZvXSAdDa9d8571244028880e34E36459Ca9f"
+    THIRD_PARTY_API_KEY = st.secrets["THIRD_PARTY_API_KEY"]
     THIRD_PARTY_BASE_URL = "https://free.v36.cm/v1/"
     THIRD_PARTY_MODEL = "gpt-4o-mini"
     THIRD_PARTY_HEADERS = {"x-foo": "true"}
 
     EMBEDDING_BASE_URL = "https://ai.gitee.com/v1"
-    EMBEDDING_API_KEY = "BNPGOZQ2MKEBFHUTEWLNMIQEBFZFQOVZOYLQ241R"
+    EMBEDDING_API_KEY = st.secrets["EMBEDDINGS_API_KEY"]
     EMBEDDING_MODEL = "Qwen3-Embedding-8B"
     EMBEDDING_HEADERS = {"X-Failover-Enabled": "true"}
 
