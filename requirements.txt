@@ -6,7 +6,7 @@ langchain>=0.3.0
 
 # LangChain Postgres integration (match with langchain version)
 langchain-postgres>=0.0.15
-f
+
 # OpenAI client (latest stable)
 openai>=1.9.0
 
