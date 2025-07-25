@@ -1,2 +1,2 @@
-libpq-dev  # PostgreSQL client library required by psycopg3
+libpq-dev
 
