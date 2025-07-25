@@ -121,7 +121,7 @@ def init_components():
     )
 
     # Use cloud database connection string
-    db_conn_str = os.getenv("CLOUD_DB_CONN_STR")  # From environment variable
+    db_conn_str = st.secrets["CLOUD_DB_CONN_STR"]  # From environment variable
     vector_store = PGVector(
         connection=db_conn_str,
         embeddings=embeddings,
