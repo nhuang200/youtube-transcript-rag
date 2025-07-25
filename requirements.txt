@@ -1,0 +1,7 @@
+streamlit>=1.47.0
+langchain>=0.3.26
+langchain-postgres>=0.0.15
+openai>=1.91.1
+psycopg2-binary>=2.9.10  # Required for PostgreSQL connections
+tenacity>=9.1.2
+python-dotenv>=1.1.1
