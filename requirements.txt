@@ -1,7 +1,20 @@
+# Core Streamlit (latest stable version)
 streamlit>=1.47.0
-langchain>=0.3.26
+
+# LangChain core (use >=0.3.0 for stable RAG features)
+langchain>=0.3.0
+
+# LangChain Postgres integration (match with langchain version)
 langchain-postgres>=0.0.15
-openai>=1.91.1
-psycopg2-binary>=2.9.10  # Required for PostgreSQL connections
-tenacity>=9.1.2
-python-dotenv>=1.1.1
+
+# OpenAI client (latest stable)
+openai>=1.9.0
+
+# PostgreSQL adapter (pre-compiled for Streamlit Cloud)
+psycopg2-binary>=2.9.9  # Critical for Neon connection
+
+# Retry logic for API calls
+tenacity>=9.1.0
+
+# Environment variables
+python-dotenv>=1.1.0
