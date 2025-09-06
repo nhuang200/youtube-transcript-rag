@@ -54,7 +54,13 @@ class GiteeEmbeddings(Embeddings):
             input=text,
             model=self.model_name
         )
-        return response.data[0].embedding
+         vector = response.data[0].embedding
+    
+        #   Debug check
+        if len(vector) != 4096:
+            raise ValueError(f"Unexpected embedding dimension: {len(vector)} (expected 4096)")
+    
+        return vector
 
     def embed_documents(self, texts: List[str]) -> List[List[float]]:
         return [self._embed(text) for text in texts]
