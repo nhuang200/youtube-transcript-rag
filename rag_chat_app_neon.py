@@ -52,7 +52,8 @@ class GiteeEmbeddings(Embeddings):
         )
         response = client.embeddings.create(
             input=text,
-            model=self.model_name
+            model=self.model_name,
+            dimensions=4096
         )
         vector = response.data[0].embedding
     
