@@ -54,7 +54,7 @@ class GiteeEmbeddings(Embeddings):
             input=text,
             model=self.model_name
         )
-         vector = response.data[0].embedding
+        vector = response.data[0].embedding
     
         #   Debug check
         if len(vector) != 4096:
